@@ -1,4 +1,4 @@
 package domain
 
-case class EconomySeat(override var passenger: Option[Passenger]) extends FlightSeat {
+case class EconomySeat(passenger: Option[Passenger]) extends FlightSeat(passenger) {
 }
